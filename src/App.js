@@ -4,7 +4,7 @@ import { NotificationContainer } from "react-notifications"
 import 'react-notifications/lib/notifications.css';
 function App() {
     return (
-        <div>
+        <div style={{ width: '100%', padding: '0 20px' }}>
             <Routing />
             <NotificationContainer />
         </div >

@@ -2,3 +2,18 @@
     text-decoration: none !important;
    
 }
+
+.containerDiv{
+max-width: 1280px;
+margin: 0 auto;
+overflow-x: auto;
+width: 100%;
+padding: 30px 20px;
+
+
+
+}
+.containerDiv>div{
+    width: 100%;;
+    min-width: 800px;
+}
