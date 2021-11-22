@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
 import { useHistory, useParams } from 'react-router'
 import { useFormik } from "formik";
@@ -35,7 +36,7 @@ function EditEmploy() {
 
     useEffect(() => {
         singleEmployFind()
-    }, [params])
+    }, [])
 
 
 
