@@ -35,7 +35,7 @@ function EditEmploy() {
 
     useEffect(() => {
         singleEmployFind()
-    }, [])
+    }, [params])
 
 
 

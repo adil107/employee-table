@@ -28,7 +28,7 @@ export const employDataReduser = (state = initState, action) => {
 
         case constant.UPDATE_DATA:
             createNotification("success", "Success", "Successfully Updated")
-            var Res = state.data.filter(ele => ele.id !== payload.id)
+            const Res = state.data.filter(ele => ele.id !== payload.id)
             return {
                 ...state,
                 data: [...Res, payload.data]
