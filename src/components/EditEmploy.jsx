@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+
 import React, { useEffect, useState } from 'react'
 import { useHistory, useParams } from 'react-router'
 import { useFormik } from "formik";
@@ -29,13 +29,14 @@ function EditEmploy() {
     const history = useHistory()
     const dispatch = useDispatch()
     const { data } = useSelector(state => state.employ)
-    const singleEmployFind = () => {
-        const singleEmploy = data.find((ele) => ele.id === params.id)
-        setSingle(singleEmploy)
-    }
 
     useEffect(() => {
+        const singleEmployFind = () => {
+            const singleEmploy = data.find((ele) => ele.id === params.id)
+            setSingle(singleEmploy)
+        }
         singleEmployFind()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 
