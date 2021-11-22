@@ -27,11 +27,11 @@ function AddNewEmploy() {
 
     const formik = useFormik({
         initialValues: {
-            name: "m Adil",
-            age: "22",
-            stime: "13:00",
-            etime: "17:00",
-            salary: "20000",
+            name: "",
+            age: "",
+            stime: "",
+            etime: "",
+            salary: "",
         },
         onSubmit: ((value) => {
             let ehour = value.etime.split(":")[0]
